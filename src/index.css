@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0ea5e9;
+  --color-primary-hover: #0284c7;
+  --color-accent: #f59e0b;
+  --color-background: #0a0f1e;
+  --color-surface: #111827;
+  --color-surface-hover: #1f2937;
+  
+  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-gray-300 antialiased font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-white font-bold tracking-tight;
+  }
+}
